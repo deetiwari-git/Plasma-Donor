@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 // import bg from '../images/Background.jfif';
-
+import Home from "./Home";
+import {Link} from 'react-router-dom';
 class BodyDomain extends Component {
   onLoginClick() {}
   render() {
     return (
+      <>
       <div className="ui container fluid">
         <div
           style={{
@@ -31,6 +33,7 @@ class BodyDomain extends Component {
             className="ui two column very relaxed grid"
           >
             <div className="column">
+              <Link to='/donor'>
               <div
                 className="ui button green"
                 style={{
@@ -39,11 +42,13 @@ class BodyDomain extends Component {
                   color: "black",
                   fontStyle: "bold",
                 }}
-              >
+              > 
                 <strong>Be A Donor</strong>
               </div>
+              </Link>
             </div>
             <div className="column">
+              <Link to='patient'>
               <div
                 className="ui button green"
                 style={{
@@ -55,10 +60,13 @@ class BodyDomain extends Component {
               >
                 <strong>Donors Near me</strong>
               </div>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      <Home />
+      </>
     );
   }
 }

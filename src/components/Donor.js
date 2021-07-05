@@ -52,7 +52,7 @@ const Contacts = () => {
         <div className="mb-5">
           <ContactForm {...{ currentId, contactObjects, addOrEdit }} />
         </div>
-        <h1>Available Plasma donors</h1>
+        {/* <h1>Available Plasma donors</h1>
 
         <div className="table-responsive availablePersons">
           <table className="table table-borderless table-stripped table-content">
@@ -98,7 +98,7 @@ const Contacts = () => {
               })}
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
     </>
   );
